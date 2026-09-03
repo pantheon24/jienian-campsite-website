@@ -1,0 +1,258 @@
+<svg viewBox="0 0 1182 642" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="吉恩典山丘營區配置圖（依官方配置圖描繪）：入口在左下角，道路由入口沿下緣進場並繞行右側與上緣。左至右、下至上分佈 E 區、D 區、C 區、B 區、營本部、A1／A2／A5／A6 區與森林步道、樹林；中上為果園、小動物區、景觀池。淺綠為草坡、深綠為林地與坡崁、灰為道路與停車場；粉紅點為插座、褐點為洗水槽。">
+  <defs>
+    <path id="land" d="M180,100 C240,82 320,90 400,86 C480,82 560,76 640,80 C710,82 760,88 792,104
+      C840,112 884,140 894,180 C906,224 900,270 882,300 C902,336 906,392 882,436 C862,478 818,512 762,522
+      C690,536 560,542 420,540 C300,538 200,548 140,540 C96,532 74,486 72,432 C60,388 66,340 88,344
+      C66,300 66,232 76,192 C86,150 120,112 180,100 Z"/>
+    <clipPath id="landClip"><use href="#land"/></clipPath>
+
+    <pattern id="mow" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <rect width="30" height="30" fill="none"/>
+      <rect width="30" height="15" fill="#3d6b2e" opacity="0.045"/>
+    </pattern>
+
+    <symbol id="tree" viewBox="0 0 40 48">
+      <rect x="17.5" y="33" width="4.6" height="13" rx="1.6" fill="#8a5a33"/>
+      <circle cx="14" cy="24" r="11" fill="#6fa24c"/>
+      <circle cx="26" cy="22" r="12" fill="#7cb257"/>
+      <circle cx="20" cy="14" r="10" fill="#8cc266"/>
+      <circle cx="16.5" cy="18" r="4.4" fill="#a6d484" opacity=".75"/>
+    </symbol>
+    <symbol id="pine" viewBox="0 0 32 48">
+      <rect x="14" y="37" width="4" height="10" rx="1.3" fill="#7a5230"/>
+      <path d="M16 3 L27 22 L5 22 Z" fill="#5f9445"/>
+      <path d="M16 13 L29 35 L3 35 Z" fill="#6ea251"/>
+      <path d="M16 23 L31 45 L1 45 Z" fill="#7cb15c"/>
+    </symbol>
+    <symbol id="toilet" viewBox="0 0 36 40">
+      <rect x="4" y="14" width="28" height="24" rx="3" fill="#FFFDF6" stroke="#C9BE9E" stroke-width="1.5"/>
+      <path d="M1.5 15.5 L18 3 L34.5 15.5 Z" fill="#C4623E"/>
+      <circle cx="13" cy="24" r="2.8" fill="#3b3b3b"/>
+      <path d="M13 27c-2.6 0-3.5 2.6-3.5 5.4V37h7v-4.6C16.5 29.6 15.6 27 13 27z" fill="#3b3b3b"/>
+      <circle cx="23" cy="24" r="2.8" fill="#C4623E"/>
+      <path d="M23 27c-2.4 0-3.2 2.4-3.2 5V37h6.4v-5c0-2.6-.8-5-3.2-5z" fill="#C4623E"/>
+    </symbol>
+    <symbol id="hq" viewBox="0 0 108 74">
+      <ellipse cx="55" cy="70" rx="46" ry="5" fill="#000000" opacity=".12"/>
+      <rect x="16" y="34" width="76" height="34" fill="#F4EEE1" stroke="#D3C7AC" stroke-width="1.6"/>
+      <path d="M8 36 L54 10 L100 36 Z" fill="#3f4a58"/>
+      <g stroke="#5b6675" stroke-width="1.2" opacity=".9">
+        <line x1="20" y1="34" x2="54" y2="14"/><line x1="34" y1="34" x2="62" y2="18"/>
+        <line x1="48" y1="34" x2="72" y2="20"/><line x1="66" y1="34" x2="82" y2="24"/>
+        <line x1="84" y1="34" x2="92" y2="30"/>
+      </g>
+      <rect x="26" y="44" width="15" height="18" fill="#8FB0C4"/>
+      <rect x="54" y="42" width="16" height="26" fill="#C4623E"/>
+      <rect x="76" y="46" width="10" height="12" fill="#8FB0C4"/>
+    </symbol>
+    <symbol id="shelter" viewBox="0 0 90 62">
+      <ellipse cx="45" cy="57" rx="38" ry="4" fill="#000000" opacity=".1"/>
+      <path d="M45 6 L84 28 L45 50 L6 28 Z" fill="#8A9BB0"/>
+      <path d="M6 28 L45 50 L45 58 L6 36 Z" fill="#6C7D92"/>
+      <path d="M84 28 L45 50 L45 58 L84 36 Z" fill="#5E6E82"/>
+    </symbol>
+    <symbol id="pp" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="12.5" fill="#5F8CA3" stroke="#FFFDF6" stroke-width="2"/>
+      <text x="14" y="19.5" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-weight="800" font-size="16" fill="#FFFDF6">P</text>
+    </symbol>
+    <symbol id="stairs" viewBox="0 0 32 32">
+      <path d="M3 28 L3 22 L11 22 L11 15 L19 15 L19 8 L27 8 L27 2" fill="none" stroke="#5b6b4a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3 28 L3 22 L11 22 L11 15 L19 15 L19 8 L27 8 L27 2" fill="none" stroke="#F4F0E2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="pitch" viewBox="0 0 14 20">
+      <path d="M7 1 C4.5 6 1 9.5 1 13.2 A6 6 0 0 0 13 13.2 C13 9.5 9.5 6 7 1 Z" fill="#DE6BA0"/>
+      <ellipse cx="4.8" cy="12" rx="1.5" ry="2.3" fill="#F0A6CA" opacity=".55"/>
+    </symbol>
+    <symbol id="sink" viewBox="0 0 14 20">
+      <path d="M7 1 C4.5 6 1 9.5 1 13.2 A6 6 0 0 0 13 13.2 C13 9.5 9.5 6 7 1 Z" fill="#8a5a33"/>
+      <ellipse cx="4.8" cy="12" rx="1.5" ry="2.3" fill="#b98a5e" opacity=".55"/>
+    </symbol>
+    <symbol id="goose" viewBox="0 0 26 24">
+      <ellipse cx="14" cy="16" rx="8" ry="6" fill="#FFFFFF" stroke="#D8CBA6" stroke-width="1"/>
+      <path d="M8 13 C5 11 6 4 9 4 C11 4 11 9 10 13 Z" fill="#FFFFFF" stroke="#D8CBA6" stroke-width="1"/>
+      <circle cx="9" cy="5.5" r="1.2" fill="#333"/>
+      <path d="M7 6.5 L3.5 6.5" stroke="#E8A33C" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="compass" viewBox="0 0 44 44">
+      <circle cx="22" cy="22" r="13" fill="#FFFDF6" stroke="#8a8a80" stroke-width="1.6"/>
+      <path d="M22 6 L22 12 M22 32 L22 38 M6 22 L12 22 M32 22 L38 22" stroke="#8a8a80" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M31 22 L37 20 L37 24 Z" fill="#C4623E"/>
+    </symbol>
+  </defs>
+
+  <!-- ================= 描圖底圖：微調時把 opacity 調成 0.4，完成後整行刪除 ================= -->
+  <image href="layout.png" x="0" y="0" width="1182" height="642" opacity="0"/>
+
+  <!-- ================= 地形 ================= -->
+  <use href="#land" fill="#C6E0A2"/>
+
+  <g clip-path="url(#landClip)">
+    <!-- ===========================================================
+         色塊規則（互不重疊、互不覆蓋）：
+         灰 = 汽車可行駛：停車場該層整片＋最下方入口道路＋各層轉進來的小段
+         深綠 = 斜坡／圍籬，人不可行走，只作各層分隔
+         淺綠 = 可行走草地（底色）
+         =========================================================== -->
+
+    <!-- ── 灰：停車場（該層整片，上到層頂、下接入口道路） ── -->
+    <path d="M199,238 C224,232 248,232 271,238 C292,328 312,414 330,498
+      C304,504 280,504 258,498 C240,414 218,328 199,238 Z" fill="#D0C9B6"/>
+
+    <!-- ── 深綠：各層分隔坡崁／圍籬 ── -->
+    <g fill="#7FB055">
+      <!-- ① E 區 ↔ 停車場 -->
+      <path d="M175,238 C183,235 191,235 199,238 C220,328 240,414 258,498
+        C250,501 242,501 234,498 C216,414 194,328 175,238 Z"/>
+      <!-- ② 停車場 ↔ D 區 -->
+      <path d="M271,238 C279,235 287,235 295,238 C316,328 336,414 354,498
+        C346,501 338,501 330,498 C312,414 290,328 271,238 Z"/>
+      <!-- ③ D 區 ↔ C 區 -->
+      <path d="M373,238 C381,235 389,235 397,238 C418,328 438,414 456,498
+        C448,501 440,501 432,498 C414,414 392,328 373,238 Z"/>
+      <!-- ④ C 區 ↔ 營本部／B 區 -->
+      <path d="M479,238 C487,235 495,235 503,238 C524,328 544,414 562,498
+        C554,501 546,501 538,498 C520,414 498,328 479,238 Z"/>
+      <!-- ⑤ B 區 ↔ A 區 -->
+      <path d="M585,238 C593,235 601,235 609,238 C630,328 650,414 668,498
+        C660,501 652,501 644,498 C626,414 604,328 585,238 Z"/>
+      <!-- 左緣坡崁 -->
+      <path d="M74,196 C62,272 60,384 76,470 C88,490 104,488 108,466 C114,392 118,296 120,220
+        C122,176 112,148 98,138 C84,148 77,168 74,196 Z"/>
+      <!-- 上緣坡地（左）— 綠框① -->
+      <path d="M76,186 C80,138 120,106 182,98 C218,94 250,92 280,92
+        C286,140 284,196 280,244 C228,248 166,246 118,238 C94,232 78,212 76,186 Z"/>
+      <!-- 上緣坡地（右）— 綠框② -->
+      <path d="M540,102 C612,94 692,94 764,106 C786,144 794,182 790,220
+        C718,212 636,210 558,216 C546,186 538,140 540,102 Z"/>
+    </g>
+    <!-- 右側林地（森林步道／樹林） -->
+    <path d="M778,124 C824,136 866,156 884,192 C898,234 892,288 876,320 C894,360 892,418 870,458
+      C848,494 808,516 762,522 C784,462 792,382 796,302 C800,220 796,158 778,124 Z" fill="#77A94F"/>
+
+    <!-- 割草斜紋 -->
+    <rect x="0" y="0" width="1182" height="642" fill="url(#mow)"/>
+
+    <!-- ── 灰：最下方入口道路（橫貫，不進入任何一層） ── -->
+    <path d="M24,498 C200,506 420,510 620,506 C692,504 728,500 750,492 L772,620 L6,620 Z" fill="#D0C9B6"/>
+
+    <!-- ── 灰：各層由道路轉進來的一小段 ── -->
+    <g fill="#D0C9B6">
+      <!-- E 區依指示不留灰色空間，全為草地 -->
+      <!-- D 層：填滿整層寬（貼齊兩側深綠帶） -->
+      <path d="M341,438 L419,438 L433,500 L355,500 Z"/>
+      <!-- C 層：填滿整層寬 -->
+      <path d="M443,438 L525,438 L539,500 L457,500 Z"/>
+      <!-- B 層 -->
+      <path d="M580,440 C591,436 603,436 612,440 L617,500 L585,500 Z"/>
+      <!-- A 層：貼齊深綠帶右緣 -->
+      <path d="M654,438 L712,438 L726,500 L668,500 Z"/>
+    </g>
+  </g>
+
+  <!-- 地界線 -->
+  <use href="#land" fill="none" stroke="#8FB86A" stroke-width="2.5"/>
+
+  <!-- ================= 中上景觀 ================= -->
+  <!-- 景觀池依指示刪除 -->
+  <!-- 小動物區：白色虛線步道（依原圖比例放大，位置移到 D 區正上方的開放草地層） -->
+  <g fill="none" stroke="#F4EFE0" stroke-width="3.6" stroke-linecap="round" stroke-dasharray="2 6.5">
+    <path d="M336,196 C328,166 352,138 396,132 C444,124 486,134 500,158 C512,180 500,204 466,218
+      C424,234 372,232 344,216 C338,212 336,204 336,196 Z"/>
+    <path d="M352,190 C376,166 404,178 428,164 C450,152 470,152 484,160"/>
+    <path d="M344,218 C340,232 336,240 332,240"/>
+  </g>
+  <!-- 盪鞦韆的樹與鵝依指示刪除 -->
+  <!-- 果園：樹叢＋果實（白步道左側） -->
+  <g>
+    <use href="#tree" x="292" y="106" width="32" height="39"/>
+    <use href="#tree" x="322" y="96" width="32" height="39"/>
+    <use href="#tree" x="306" y="140" width="30" height="37"/>
+    <g fill="#E06B4B"><circle cx="306" cy="140" r="3.2"/><circle cx="330" cy="128" r="3.2"/><circle cx="320" cy="154" r="3.2"/></g>
+  </g>
+
+  <!-- ================= 建物 ================= -->
+  <use href="#hq" x="556" y="438" width="80" height="54"/>
+  <use href="#shelter" x="706" y="404" width="56" height="40"/>
+  <use href="#shelter" x="756" y="430" width="56" height="40"/>
+
+  <!-- ================= 樹木 ================= -->
+  <g>
+    <!-- 上緣 -->
+    <use href="#tree" x="392" y="96" width="30" height="36"/>
+    <use href="#tree" x="470" y="90" width="30" height="36"/>
+    <use href="#tree" x="540" y="98" width="30" height="36"/>
+    <use href="#tree" x="628" y="104" width="30" height="36"/>
+    <use href="#tree" x="690" y="120" width="30" height="36"/>
+    <!-- 右側林地 -->
+    <use href="#pine" x="792" y="150" width="26" height="40"/>
+    <use href="#pine" x="820" y="200" width="26" height="40"/>
+    <use href="#pine" x="838" y="258" width="26" height="40"/>
+    <use href="#pine" x="848" y="320" width="26" height="40"/>
+    <use href="#pine" x="836" y="382" width="26" height="40"/>
+    <use href="#pine" x="812" y="436" width="26" height="40"/>
+    <use href="#tree" x="770" y="180" width="28" height="34"/>
+    <use href="#tree" x="782" y="300" width="28" height="34"/>
+    <use href="#tree" x="778" y="410" width="28" height="34"/>
+    <!-- 樹林（右下） -->
+    <use href="#tree" x="748" y="480" width="30" height="36"/>
+    <use href="#tree" x="778" y="496" width="30" height="36"/>
+    <use href="#tree" x="760" y="516" width="30" height="36"/>
+    <!-- 場內零星 -->
+    <use href="#tree" x="240" y="150" width="28" height="34"/>
+    <use href="#tree" x="150" y="150" width="28" height="34"/>
+    <use href="#tree" x="120" y="440" width="26" height="32"/>
+    <use href="#tree" x="360" y="430" width="26" height="32"/>
+    <use href="#tree" x="470" y="360" width="26" height="32"/>
+    <use href="#tree" x="640" y="180" width="26" height="32"/>
+    <use href="#tree" x="700" y="270" width="26" height="32"/>
+  </g>
+
+  <!-- 插座／洗水槽水滴圖案依指示全數移除 -->
+
+  <!-- ================= 廁所 ================= -->
+  <use href="#toilet" x="276" y="188" width="30" height="33"/>
+  <use href="#toilet" x="138" y="266" width="30" height="33"/>
+  <use href="#toilet" x="690" y="214" width="30" height="33"/>
+  <use href="#toilet" x="582" y="398" width="30" height="33"/>
+
+  <!-- ================= 樓梯（跨深綠坡崁，供人上下層） ================= -->
+  <use href="#stairs" x="277" y="300" width="28" height="28"/>
+  <use href="#stairs" x="303" y="416" width="28" height="28"/>
+  <use href="#stairs" x="405" y="330" width="28" height="28"/>
+  <use href="#stairs" x="511" y="360" width="28" height="28"/>
+  <use href="#stairs" x="613" y="392" width="28" height="28"/>
+
+  <!-- ================= 停車 P（僅停車場一處） ================= -->
+  <use href="#pp" x="248" y="366" width="28" height="28"/>
+
+  <!-- ================= 指南針＋比例尺 ================= -->
+  <use href="#compass" x="852" y="196" width="42" height="42"/>
+  <text x="906" y="222" font-family="'Noto Sans TC',sans-serif" font-weight="700" font-size="17" fill="#4a4a44">東</text>
+  <text x="852" y="566" font-family="'Noto Sans TC',sans-serif" font-size="13" fill="#5F8CA3">嘉義　水上</text>
+  <text x="852" y="590" font-family="'Noto Sans TC',sans-serif" font-weight="700" font-size="17" fill="#4a4a44">海拔 90 公尺</text>
+
+  <!-- ================= 入口 ================= -->
+  <g>
+    <rect x="30" y="536" width="72" height="30" rx="7" fill="#5B4636"/>
+    <text x="66" y="557" text-anchor="middle" font-family="'Noto Serif TC',serif" font-weight="700" font-size="17" fill="#FDF7EC">入口</text>
+    <path d="M108,551 L146,551 M140,544 L148,551 L140,558" fill="none" stroke="#5B4636" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 粉紅標籤 ================= -->
+  <g font-family="'Noto Sans TC',sans-serif" font-weight="700" fill="#FFFFFF">
+    <g><rect x="122" y="388" width="66" height="32" rx="16" fill="#EA6A9C"/><text x="155" y="410" text-anchor="middle" font-size="17">E區</text></g>
+    <g><rect x="332" y="384" width="66" height="32" rx="16" fill="#EA6A9C"/><text x="365" y="406" text-anchor="middle" font-size="17">D區</text></g>
+    <g><rect x="447" y="444" width="66" height="32" rx="16" fill="#EA6A9C"/><text x="480" y="466" text-anchor="middle" font-size="17">C區</text></g>
+    <g><rect x="595" y="544" width="66" height="32" rx="16" fill="#EA6A9C"/><text x="628" y="566" text-anchor="middle" font-size="17">B區</text></g>
+    <g><rect x="635" y="294" width="76" height="32" rx="16" fill="#EA6A9C"/><text x="673" y="316" text-anchor="middle" font-size="17">A6區</text></g>
+    <g><rect x="648" y="380" width="76" height="32" rx="16" fill="#EA6A9C"/><text x="686" y="402" text-anchor="middle" font-size="17">A1區</text></g>
+    <g><rect x="712" y="422" width="76" height="32" rx="16" fill="#EA6A9C"/><text x="750" y="444" text-anchor="middle" font-size="17">A2區</text></g>
+    <g><rect x="792" y="438" width="76" height="32" rx="16" fill="#EA6A9C"/><text x="830" y="460" text-anchor="middle" font-size="17">A5區</text></g>
+    <g><rect x="828" y="390" width="104" height="32" rx="16" fill="#EA6A9C"/><text x="880" y="412" text-anchor="middle" font-size="17">森林步道</text></g>
+    <g><rect x="762" y="504" width="62" height="30" rx="15" fill="#EA6A9C"/><text x="793" y="525" text-anchor="middle" font-size="16">樹林</text></g>
+    <g><rect x="512" y="520" width="102" height="30" rx="15" fill="#EA6A9C"/><text x="563" y="541" text-anchor="middle" font-size="15">1F 營本部</text></g>
+  </g>
+
+  <!-- 描圖對位用（完成後連同上方 image 一起刪） -->
+  <image id="traceTop" href="layout.png" x="0" y="0" width="1182" height="642" opacity="0"/>
+</svg>
