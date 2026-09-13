@@ -87,15 +87,22 @@
          並把 <article class="event-card"> 改成 <article class="event-card no-media">，版面會自動變成整排文字。
       2. 標籤 <span class="event-tag is-feature">主打</span> 是橘底醒目款；
          想用一般灰綠底，改成 <span class="event-tag">嘉義市</span> 即可，不需要的話整行刪掉。
-      3. event-info、event-highlights 這兩段不需要就整段刪掉，版面不會壞。
-      4. 網址裡如果有 & 符號，要寫成 &amp; 才不會出錯。
-      5. 活動結束後，把整個 <article> 搬到下面「已結束」區塊裡，會自動變淡。
-      6. 活動圖片請放到 assets/images/events/ 資料夾。
+      3. 文字比較多的活動（有亮點清單那種），把 <article class="event-card"> 改成
+         <article class="event-card media-top">，圖片會變成上方滿版大圖，比左側窄長條好看。
+      4. event-info、event-highlights 這兩段不需要就整段刪掉，版面不會壞。
+      5. 網址裡如果有 & 符號，要寫成 &amp; 才不會出錯（從 FB 複製的網址還要把
+         最後面 &fbclid=... 那一長串追蹤碼刪掉，留著不影響功能但很醜）。
+      6. 活動結束後，把整個 <article> 搬到下面「已結束」區塊裡，會自動變淡。
+      7. 活動圖片請放到 assets/images/events/ 資料夾，檔名用英文數字（例如
+         2026-light-forest.jpg），中文檔名在網址上容易出問題。
     -->
 
     <div class="event-list">
 
-      <article class="event-card no-media">
+      <article class="event-card media-top">
+        <div class="event-media">
+          <img src="assets/images/events/2026-light-forest.jpg" alt="2026 光織影舞－光影森林：北香湖公園的 9 公尺巨型小熊維尼光影裝置">
+        </div>
         <div class="event-body">
           <div class="event-meta">
             <span class="event-date">2026.09.25（五）－10.11（日）</span>
@@ -114,7 +121,7 @@
           <p>想順道來個秋日小旅行嗎？<strong>從吉恩典開車過去只要 20 分鐘</strong>，白天在營區放空、晚上去看光影，回來剛好洗澡睡覺。</p>
           <div class="event-actions">
             <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">線上預約營位</a>
-            <a class="btn btn-ghost" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001019&amp;lid=081673" target="_blank" rel="noopener">活動官方資訊</a>
+            <a class="btn btn-ghost" href="https://travel.chiayi.gov.tw/ActivityInfo/C000001?ID=5ccb3ff4-d8d4-4cb4-8c81-e741a7c45880&amp;PageIndex=1&amp;PageType=1" target="_blank" rel="noopener">活動官方資訊</a>
           </div>
         </div>
       </article>

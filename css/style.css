@@ -856,6 +856,15 @@ section { padding: 64px 0; }
 
 .event-card.no-media { grid-template-columns: 1fr; }
 
+.event-card.media-top { grid-template-columns: 1fr; }
+
+.event-card.media-top .event-media img {
+  height: auto;
+  min-height: 0;
+  max-height: 580px;
+  object-fit: contain;
+}
+
 .event-media { background: var(--green-light); }
 
 .event-media img {
