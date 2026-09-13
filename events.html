@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>活動快訊｜吉恩典山丘露營區</title>
-<meta name="description" content="吉恩典山丘露營區最新活動與公告：季節限定活動、親子同樂、營區休園與設施維護資訊，都會第一時間公布在這裡。">
+<meta name="description" content="吉恩典山丘為你精選嘉義在地好玩的特色景點與活動：光影藝術展、節慶市集、親子行程，白天出去玩、晚上回營區睡一晚，順道來場嘉義小旅行。">
 <link rel="canonical" href="https://pantheon24.github.io/jienian-campsite-website/events.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="吉恩典山丘露營區">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:title" content="活動快訊｜吉恩典山丘露營區">
-<meta property="og:description" content="吉恩典山丘露營區最新活動與公告：季節限定活動、親子同樂、營區休園與設施維護資訊，都會第一時間公布在這裡。">
+<meta property="og:description" content="吉恩典山丘為你精選嘉義在地好玩的特色景點與活動：光影藝術展、節慶市集、親子行程，白天出去玩、晚上回營區睡一晚，順道來場嘉義小旅行。">
 <meta property="og:url" content="https://pantheon24.github.io/jienian-campsite-website/events.html">
 <meta property="og:image" content="https://pantheon24.github.io/jienian-campsite-website/assets/images/hero/hero-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="活動快訊｜吉恩典山丘露營區">
-<meta name="twitter:description" content="吉恩典山丘露營區最新活動與公告：季節限定活動、親子同樂、營區休園與設施維護資訊，都會第一時間公布在這裡。">
+<meta name="twitter:description" content="吉恩典山丘為你精選嘉義在地好玩的特色景點與活動：光影藝術展、節慶市集、親子行程，白天出去玩、晚上回營區睡一晚，順道來場嘉義小旅行。">
 <meta name="twitter:image" content="https://pantheon24.github.io/jienian-campsite-website/assets/images/hero/hero-1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,14 +44,14 @@
 
 <div class="page-hero">
   <h1>活動快訊</h1>
-  <p>季節限定活動、營區公告與最新消息，都會第一時間放在這裡</p>
+  <p>吉恩典幫你精選嘉義在地好玩的景點與活動<br>白天出去走走，晚上回營區看夜景睡一晚</p>
 </div>
 
 <section>
   <div class="container">
     <div class="section-title">
       <span class="eyebrow">What's On</span>
-      <h2>近期活動</h2>
+      <h2>近期推薦</h2>
     </div>
 
     <!--
@@ -65,11 +65,19 @@
           <div class="event-meta">
             <span class="event-date">2026.10.05（六）</span>
             <span class="event-tag is-feature">主打</span>
+            <span class="event-tag">嘉義市</span>
           </div>
           <h3>活動名稱</h3>
-          <p>兩到三行的活動簡介，寫清楚在哪裡、做什麼、適合誰參加。</p>
+          <p class="event-info">地點｜時間｜票價（這一行會有淡綠底色，放最重要的實用資訊）</p>
+          <p>一兩句話介紹這個活動在幹嘛、為什麼好玩。</p>
+          <ul class="event-highlights">
+            <li>🐻 亮點一</li>
+            <li>🌕 亮點二</li>
+          </ul>
+          <p>從吉恩典開車過去只要 XX 分鐘，順道來住一晚剛剛好。</p>
           <div class="event-actions">
-            <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">我要報名</a>
+            <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">線上預約營位</a>
+            <a class="btn btn-ghost" href="活動官方連結" target="_blank" rel="noopener">活動官方資訊</a>
           </div>
         </div>
       </article>
@@ -78,21 +86,38 @@
       1. 沒有活動海報時，把 <div class="event-media">…</div> 整塊刪掉，
          並把 <article class="event-card"> 改成 <article class="event-card no-media">，版面會自動變成整排文字。
       2. 標籤 <span class="event-tag is-feature">主打</span> 是橘底醒目款；
-         想用一般灰綠底，改成 <span class="event-tag">營區公告</span> 即可，不需要的話整行刪掉。
-      3. 活動結束後，把整個 <article> 搬到下面「已結束」區塊裡，會自動變淡。
-      4. 活動圖片請放到 assets/images/events/ 資料夾。
+         想用一般灰綠底，改成 <span class="event-tag">嘉義市</span> 即可，不需要的話整行刪掉。
+      3. event-info、event-highlights 這兩段不需要就整段刪掉，版面不會壞。
+      4. 網址裡如果有 & 符號，要寫成 &amp; 才不會出錯。
+      5. 活動結束後，把整個 <article> 搬到下面「已結束」區塊裡，會自動變淡。
+      6. 活動圖片請放到 assets/images/events/ 資料夾。
     -->
 
     <div class="event-list">
 
-      <div class="event-empty">
-        <h3>目前沒有進行中的活動</h3>
-        <p>我們正在籌備下一場活動，最新消息會第一時間公布在這裡。<br>想搶先知道，歡迎追蹤我們的 Facebook 粉絲專頁。</p>
-        <div class="cta-row">
-          <a class="btn btn-outline" href="https://www.facebook.com/luckygracehillsjed394" target="_blank" rel="noopener">追蹤 Facebook</a>
-          <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">線上預約</a>
+      <article class="event-card no-media">
+        <div class="event-body">
+          <div class="event-meta">
+            <span class="event-date">2026.09.25（五）－10.11（日）</span>
+            <span class="event-tag is-feature">主打</span>
+            <span class="event-tag">嘉義市</span>
+          </div>
+          <h3>2026 光織影舞－光影森林</h3>
+          <p class="event-info">北香湖公園（嘉義市西區）｜每晚 18:00–22:00．微笑市集 16:00 開賣｜免費入場</p>
+          <p>一年一度的光影盛宴來囉！整座北香湖公園變成一片會發光的森林，今年以小熊維尼 100 週年為主題，10 大展區一路串起來，晚上散步剛剛好。</p>
+          <ul class="event-highlights">
+            <li>🐻 9 公尺巨型小熊維尼光影裝置，搭配湖面倒映超夢幻</li>
+            <li>🌕 5 公尺月球、金色蜂蜜罐，拍照打卡美到不行</li>
+            <li>📖 20 公尺立體繪本隧道，一路串聯 10 大光影展區</li>
+            <li>🛍️ 微笑市集每天登場，美食購物通通有</li>
+          </ul>
+          <p>想順道來個秋日小旅行嗎？<strong>從吉恩典開車過去只要 20 分鐘</strong>，白天在營區放空、晚上去看光影，回來剛好洗澡睡覺。</p>
+          <div class="event-actions">
+            <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">線上預約營位</a>
+            <a class="btn btn-ghost" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001019&amp;lid=081673" target="_blank" rel="noopener">活動官方資訊</a>
+          </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </div>
@@ -120,9 +145,9 @@
   <div class="container">
     <div class="section-title">
       <span class="eyebrow">Booking</span>
-      <h2>想來走走？</h2>
+      <h2>玩完嘉義，回來睡一晚</h2>
     </div>
-    <p class="events-outro">鬧中取靜的山丘營地，開車就到，補給方便。<br>不用等活動，隨時都歡迎你來住一晚。</p>
+    <p class="events-outro">吉恩典就在嘉義市郊的小山丘上，離市區近、補給方便，<br>晚上還能在觀景台看嘉義市夜景。不用等活動，隨時都歡迎你來。</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://m.icamping.app/store/jed746" target="_blank" rel="noopener">線上預約</a>
       <a class="btn btn-ghost" href="camp-intro.html">認識營區</a>
