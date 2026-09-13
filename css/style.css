@@ -827,3 +827,139 @@ section { padding: 64px 0; }
   padding-top: 18px;
   border-top: 1px solid rgba(255,255,255,0.15);
 }
+
+/* ---------- 活動快訊 Events ---------- */
+
+.event-list {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.event-card.no-media { grid-template-columns: 1fr; }
+
+.event-media { background: var(--green-light); }
+
+.event-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+}
+
+.event-body { padding: 22px 24px; }
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.event-date {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--tan-dark);
+}
+
+.event-tag {
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+
+.event-tag.is-feature {
+  background: var(--tan-dark);
+  color: var(--white);
+}
+
+.event-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: var(--green-dark);
+}
+
+.event-body p {
+  margin: 0 0 16px;
+  color: var(--ink-soft);
+}
+
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.event-actions .btn {
+  padding: 10px 22px;
+  font-size: 0.92rem;
+}
+
+.events-past .event-card {
+  opacity: 0.62;
+  box-shadow: none;
+}
+
+.events-past .event-card:hover {
+  opacity: 0.85;
+  transform: none;
+  box-shadow: var(--shadow);
+}
+
+.events-past .event-date { color: var(--ink-soft); }
+
+.event-empty {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 28px;
+  text-align: center;
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.event-empty h3 {
+  margin: 0 0 10px;
+  color: var(--green-dark);
+}
+
+.event-empty p {
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+}
+
+.events-outro {
+  max-width: 620px;
+  margin: -14px auto 0;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 720px) {
+  .event-card { grid-template-columns: 1fr; }
+  .event-media img { min-height: 200px; max-height: 260px; }
+  .event-body { padding: 20px; }
+}
