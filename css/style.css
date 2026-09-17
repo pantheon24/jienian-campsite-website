@@ -997,3 +997,302 @@ section { padding: 64px 0; }
   .event-media img { min-height: 200px; max-height: 260px; }
   .event-body { padding: 20px; }
 }
+
+/* ===== 營位價格頁 ===== */
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.price-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--green);
+  padding: 26px 18px;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+.price-card:hover { transform: translateY(-4px); }
+
+.price-card.is-feature { border-top-color: var(--tan-dark); }
+
+.price-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  color: var(--green-dark);
+}
+
+.price-when {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.price-amount {
+  display: block;
+  font-family: "Noto Serif TC", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--tan-dark);
+  line-height: 1.2;
+}
+
+.price-unit {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.price-note {
+  margin: 0 0 14px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.price-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 26px;
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  background: var(--green-light);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.price-banner-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px 22px;
+}
+
+.price-banner-note {
+  margin: 0;
+  max-width: 720px;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.price-banner strong {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+}
+
+.price-banner span { color: var(--ink-soft); font-size: 0.92rem; }
+
+.price-banner b { color: var(--tan-dark); font-size: 1.05rem; }
+
+.price-banner a {
+  color: var(--tan-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 0.92rem;
+}
+
+.notice-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--tan-dark);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  box-shadow: var(--shadow);
+}
+
+.notice-box h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  color: var(--green-dark);
+}
+
+.notice-box ul { margin: 0; padding-left: 20px; }
+
+.notice-box li { margin-bottom: 8px; color: var(--ink-soft); }
+
+.notice-box li strong { color: var(--tan-dark); }
+
+.faq-list { max-width: 820px; margin: 0 auto; }
+
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 24px;
+  margin-bottom: 14px;
+}
+
+.faq-item h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+}
+
+.faq-item p { margin: 0; color: var(--ink-soft); }
+
+@media (max-width: 900px) { .price-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .price-grid { grid-template-columns: 1fr; } }
+
+/* ===== 車泊收費表 ===== */
+
+.rate-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+
+.rate-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.rate-table caption {
+  padding: 14px 18px 0;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.rate-table th,
+.rate-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.rate-table thead th {
+  background: var(--green-dark);
+  color: var(--white);
+  font-family: "Noto Serif TC", serif;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  border-bottom: none;
+}
+
+.rate-table tbody th {
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.rate-table tbody tr:last-child th,
+.rate-table tbody tr:last-child td { border-bottom: none; }
+
+.rate-table td { color: var(--ink); font-weight: 500; }
+
+.table-hint {
+  margin: 0 0 14px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+/* ===== 營區分層與包區說明 ===== */
+
+.zone-note {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--green);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 26px;
+  box-shadow: var(--shadow);
+}
+
+.zone-note > p {
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.zone-note ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.zone-note li {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.zone-note li strong { color: var(--tan-dark); }
+
+@media (max-width: 900px) { .zone-note ul { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .zone-note ul { grid-template-columns: 1fr; } }
+
+/* ===== 營區規範 ===== */
+
+.rules-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px 34px;
+}
+
+.rules-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rules-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 13px;
+  color: var(--ink-soft);
+  line-height: 1.85;
+}
+
+.rules-list li:last-child { margin-bottom: 0; }
+
+.rules-list li::before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--tan-dark);
+  font-size: 0.85em;
+}
+
+.rules-list li strong { color: var(--ink); }
+
+@media (max-width: 600px) { .rules-card { padding: 24px 20px; } }
+
+.table-hint a,
+.faq-item a,
+.price-note a {
+  color: var(--tan-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  word-break: break-all;
+}
